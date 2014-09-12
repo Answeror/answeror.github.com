@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta http-equiv=X-UA-Compatible content='IE=edge'>
+    <meta name=viewport content='width=device-width, initial-scale=1'>
+    <title>answeror@gmail.com</title>
+    <link rel=stylesheet href='static/bootstrap/css/bootstrap.min.css'>
+    <link rel=stylesheet href='static/style.css'>
+</head>
+<body class=blog>
+    <div class=container>
+        <div class=row>
+            <div class='col-md-8 col-md-offset-2'>
+                <ul class='nav nav-pills'>
+                    <li><a href='index.html' title='home'>home</a></li>
+                    <li><a href='about.html' title='about'>about</a></li>
+                </ul>
+                <article class=art>
+                    <section class=head>
+    <h1 class=title>实践课程</h1>
+    
+    <h2><time class=ctime datetime='2012-06-25'>2012-06-25</time></h2>
+</section>
+<section class=body>
+<h1>更新历史</h1>
+<ul>
+<li>2012-07-16: <strong>作业提交时间延长至七月底</strong>; <a href="#垃圾邮件的问题">垃圾邮件的问题</a></li>
+<li>2012-07-11: 离线C++手册打包(以避免在windows下显示不正常); 集中<a href="#作业样例">作业样例</a></li>
+<li>2012-07-09: 添加第<a href="#作业样例">四次作业样例</a></li>
+<li>2012-07-07: <strong>离线版C++手册</strong>; 作业三基本要求样例; <a href="#如何检验结果的正确性">如何检验作业三的正确性</a>; 作业三Tips</li>
+<li>2012-07-06: 作业三高阶要求样例; 更新作业提交时间说明; 7月6号内容</li>
+<li>2012-07-05: 7月5号内容; 第五次作业; <strong>更新作业deadline</strong></li>
+<li>2012-07-04: 7月4号内容</li>
+<li>2012-07-03: 7月3号的内容; 6月29号, 7月2号和3号的代码</li>
+<li>2012-07-02: 7月2号的内容; 第四次作业; 使用库算法更新字符串的代码</li>
+<li>2012-07-01: 6月30号的内容</li>
+<li>2012-06-29: 6月29号的课件; 自学指南; 每次课对应的课本章节</li>
+</ul>
+<h1>学习资源</h1>
+<h2>教材</h2>
+<p>Accelerated C++</p>
+<p>电子版:</p>
+<ul>
+<li><a href="http://www.ppurl.com/2011/05/accelerated-c-%e4%b8%ad%e6%96%87%e7%89%88.html">中文版</a></li>
+<li><a href="http://www.ppurl.com/2009/12/accelerated-c.html">英文版</a></li>
+<li><a href="http://acceleratedcpp.com/">源码</a></li>
+</ul>
+<h2>C++手册</h2>
+<p>张酉夫同学制作的<a href="http://www.cplusplus.com">cplusplus.com</a>的<a href="http://dl.answeror.com/u/3450602/cppcourse/cppref_120711.rar">离线版本(chm)</a>.</p>
+<h2>自学指南</h2>
+<ol>
+<li>阅读每章最后一节(小结), 从而有针对性地补充知识点.</li>
+<li>阅读附录熟悉语法.</li>
+<li>多用Google和<a href="http://www.cplusplus.com">cplusplus.com</a>, 从书上找不如在网上搜.</li>
+<li>有空就做做每章后面的习题.</li>
+<li>不懂就给我发邮件:)</li>
+</ol>
+<h1>内容及课件</h1>
+<h2>C++简介</h2>
+<p><a href="http://dl.answeror.com/u/3450602/cppcourse/lecture.1.introduction.pdf">课件下载</a></p>
+<ol>
+<li>程序设计的基本概念.</li>
+<li>C++程序的编译和链接.</li>
+<li>表达式, 函数, 名字, 作用域, 变量, 流等基础概念.</li>
+</ol>
+<p>对应课本第0章.</p>
+<h2>C++使用基础</h2>
+<p><a href="http://dl.answeror.com/u/3450602/cppcourse/lecture.2.use-cpp.pdf">课件下载</a></p>
+<ol>
+<li>字符和字符串.</li>
+<li>控制结构.</li>
+<li>批量数据处理.</li>
+<li>容器.</li>
+<li>迭代器.</li>
+<li>算法.</li>
+</ol>
+<p>对应课本第1~7章(概述).</p>
+<h2>Qt编程</h2>
+<p><a href="http://dl.answeror.com/u/3450602/cppcourse/lecture.3-4.qt.pdf">课件下载</a></p>
+<h2>基于对象的C++编程</h2>
+<p>date: 2012-06-29</p>
+<p><a href="http://dl.answeror.com/u/3450602/cppcourse/lecture.5.a-step-futher.pdf">课件下载</a></p>
+<h3>知识点</h3>
+<ol>
+<li>复习容器和迭代器.</li>
+<li>封装的概念.</li>
+<li>成员函数.</li>
+<li>构造函数.</li>
+<li>运算符重载.</li>
+<li>断言.</li>
+</ol>
+<p>对应课本第9章.</p>
+<h3>代码</h3>
+<ol>
+<li><a href="https://gist.github.com/3038581">学生类</a></li>
+</ol>
+<h2>使用顺序容器并分析字符串</h2>
+<p>date: 2012-06-30</p>
+<ol>
+<li>将上节课的按学生姓名排序的程序分离编译.</li>
+<li>以筛选学生为例解释vector和list的使用.</li>
+<li>分割字符串.</li>
+<li>连接字符串.</li>
+</ol>
+<p>对应课本第5章.</p>
+<h2>使用库算法</h2>
+<p>date: 2012-07-02</p>
+<h3>知识点</h3>
+<ol>
+<li>容器, 算法, 迭代器, 适配器之间的关系, 以及分层思想.</li>
+<li>用find_if实现分割字符串.</li>
+<li><a href="http://www.codeproject.com/Articles/71540/Explicating-the-new-C-standard-C-0x-and-its-implem#LambdaExpressions">lambda</a>.</li>
+<li>函数重载和默认参数.</li>
+<li>谓词.</li>
+<li>讲解第一次作业.</li>
+<li>用库算法实现url查找.</li>
+<li>静态存储.</li>
+</ol>
+<p>对应课本第6章前半部分.</p>
+<h3>代码</h3>
+<ol>
+<li><a href="https://gist.github.com/3033946">使用库算法分割字符串</a></li>
+<li><a href="https://gist.github.com/3036611">用库算法提取URL</a></li>
+</ol>
+<h2>使用关联容器</h2>
+<p>date: 2012-07-03</p>
+<h3>知识点</h3>
+<p>第6章的:</p>
+<ol>
+<li><code>remove_copy_if</code>, <code>remove_if</code>, <code>partition</code></li>
+<li>标准库算法的分类: 质变/非质变</li>
+<li>标准库算法的后缀: if, copy</li>
+<li>算法和容器操作对迭代器的影响(可能会使已有的迭代器无效)</li>
+<li>使用<code>accumulate</code>拼接字符串</li>
+</ol>
+<p>第7章的:</p>
+<ol>
+<li><code>pair</code></li>
+<li><a href="http://www.codeproject.com/Articles/71540/Explicating-the-new-C-standard-C-0x-and-its-implem#AutoKeyword">auto</a></li>
+<li><code>map</code>的下标操作符</li>
+<li>函数(指针)作为函数参数(关于函数指针的详细解释在第10章)</li>
+<li>使用<code>unique</code>算法去除连续的重复元素</li>
+<li>容器的<code>front</code>和<code>back</code>成员函数</li>
+<li><code>map</code>的<code>find</code>成员函数以及为什么不能对常量<code>map</code>使用下标操作符</li>
+<li>递归, 及其与数学归纳法的关系</li>
+<li>快速排序</li>
+<li><code>operator ()</code></li>
+<li>无构造函数的结构体成员的初始化(<code>some_type foo = { some_value, another_value }</code>)</li>
+</ol>
+<h3>代码</h3>
+<ol>
+<li><a href="https://gist.github.com/3037001">用库算法提取挂科学生</a></li>
+<li><a href="https://gist.github.com/3037042">拼接字符串(空格分隔)</a></li>
+<li><a href="https://gist.github.com/3037132">交叉引用</a></li>
+<li><a href="https://gist.github.com/3038519">根据文法随机生成句子</a></li>
+<li><a href="https://gist.github.com/3038528">快速排序的简单实现</a></li>
+</ol>
+<h2>QT实例讲解</h2>
+<p>date: 2012-07-04</p>
+<h3>知识点</h3>
+<ol>
+<li>Qmake的使用方法.</li>
+<li>讲解第二次作业.</li>
+<li><code>QFile</code>, <code>QTextstream</code>读写文件</li>
+<li><code>QObject::sender</code>信号发送者</li>
+<li><code>QDir</code>目录查询</li>
+<li>复习<code>QSignalMapper</code></li>
+<li>Layout <code>addWidget</code> <code>insertWidget</code></li>
+<li>动态创建控件(<code>QPushButton</code>, <code>QDialog</code>)</li>
+</ol>
+<h2>编写泛型函数</h2>
+<p>date: 2012-07-05</p>
+<h3>知识点</h3>
+<ol>
+<li>基本语法(类模板部分参见第11章)</li>
+<li>函数模板, 模板函数, 类模板, 模板类的区别</li>
+<li>隐式接口和编译期多态(<a href="http://www.civilnet.cn/book/kernel/Effective%20C++%20(Third%20Edition)/ch07lev1sec1.html">Effective C++ Item 41</a>)</li>
+<li><a href="http://cplusplus.com/reference/std/iterator/">迭代器的分类</a></li>
+<li>模板实例化(<a href="http://zh.wikipedia.org/wiki/%E6%A8%A1%E6%9D%BF_(C%2B%2B)#.E6.A8.A1.E6.9D.BF.E5.AF.A6.E4.BE.8B.E5.8C.96">简介</a>, <a href="http://blog.copton.net/articles/linker/index.html">很好的文章但是链接挂了</a>)</li>
+<li>模板参数推导和使用过程中的类型转换与歧义.</li>
+<li>数据结构独立性.</li>
+<li>二分搜索(<code>binary_search</code>, <code>lower_bound</code>, <code>upper_bound</code>)</li>
+</ol>
+<h2>管理内存和低级数据结构</h2>
+<p>date: 2012-07-06</p>
+<h3>知识点</h3>
+<ol>
+<li>指针语法</li>
+<li>两种const指针</li>
+<li>函数指针及其<a href="http://stackoverflow.com/questions/75538/hidden-features-of-c/1414869#1414869">简便的声明方式</a></li>
+<li>函数对象(仿函数)</li>
+<li><a href="https://gist.github.com/3054103">简单的单元测试写法</a></li>
+<li>讲解第三次作业</li>
+</ol>
+<h3>代码</h3>
+<ol>
+<li><a href="https://gist.github.com/ac3642565a27d229fc0d">作业三高阶要求样例</a></li>
+<li><a href="https://gist.github.com/3065517">作业三基本要求样例</a></li>
+</ol>
+<h1>作业</h1>
+<h2>提交内容</h2>
+<ul>
+<li>OJ上的题目: 源代码 + 提交号(写在一个txt文件里)</li>
+<li>非OJ题目: 源代码</li>
+</ul>
+<h2>提交方式</h2>
+<p>上传到FTP对应目录下:</p>
+<ul>
+<li>地址: ftp://10.11.131.101:27</li>
+<li>用户名: dxq</li>
+<li>密码: dxq</li>
+<li>文件名: 学号_姓名拼音.zip(其他压缩格式均可)</li>
+</ul>
+<h2>提交时间</h2>
+<p>~~课程结束后的一周之前.~~ 提交时间延长至七月底, 觉得做得不好的同学可以再次上传.</p>
+<p>如果在校外无法上传到FTP, 可以把作业通过邮件发给我.</p>
+<p>如果不能按时提交, 请发邮件跟我说明情况, 并尽早提交. 截止日期以教务处下达提交成绩的时间. 我会把这个时间更新到主页上(现在还不知道). <strong>延时提交可能会酌情扣分</strong>.</p>
+<h2>垃圾邮件的问题</h2>
+<p>有同学反映发到我的gmail邮箱被当成垃圾邮件了, 我看了绝大多数垃圾邮件都存在以下两个特征(中的一个):</p>
+<ul>
+<li>邮件没有正文, 只有附件.</li>
+<li>邮件正文中包含QQ表情(即包含图片).</li>
+</ul>
+<p>解决办法:</p>
+<ul>
+<li>邮件里写点东西, 不要空着.</li>
+<li>尽量不要用QQ邮箱, 用了也请不要加表情.</li>
+<li>实在不行就发到另一位助教的邮箱.</li>
+</ul>
+<h2>第一次作业</h2>
+<p><a href="http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=78">Palindrom Numbers</a></p>
+<h2>第二次作业</h2>
+<ul>
+<li>实现类似onenote组织方式的记事本界面程序一个</li>
+<li>要求：<ul>
+<li>默认加载已有的文本笔记；</li>
+<li>至少有一种笔记分类组织功能（类别或者页面）</li>
+</ul>
+</li>
+<li>备注<ul>
+<li>不限制界面样式(界面自主设计，按钮或TAB等均可)</li>
+<li>不限制编程平台</li>
+<li>提交源代码及release版可执行程序(附带文档说明更佳)</li>
+</ul>
+</li>
+</ul>
+<p><img alt="onenote" class="border" src="http://dl.answeror.com/u/3450602/cppcourse/onenote.png" /></p>
+<h2>第三次作业</h2>
+<dl>
+<dt>输入</dt>
+<dd>
+<dl>
+<dt>包含一行字符串的文件</dt>
+<dt>输出</dt>
+<dd>包含(对字符)排序后的文件</dd>
+</dl>
+</dd>
+</dl>
+<h3>要求</h3>
+<p><strong>以下百分号表示所能得的分数, 只要交一题</strong></p>
+<p>基本要求(70%)</p>
+<ul>
+<li>仿照vector设计文件的容器类, 容器元素为char, 包含begin和end方法</li>
+<li>设计对应的随机访问迭代器</li>
+<li>用sort对该容器排序</li>
+</ul>
+<p>进阶要求(85%)</p>
+<ul>
+<li>输入输出文件内容为二进制整数</li>
+</ul>
+<p>高阶要求(100%)</p>
+<ul>
+<li>输入输出文件内容可以为任意内建类型, 如字符, 二进制整数, 二进制浮点数等</li>
+<li>容器及相关类写成类模板</li>
+</ul>
+<h3>Tips</h3>
+<ul>
+<li><a href="http://cplusplus.com/reference/iostream/fstream/">fstream</a>: <code>read</code>, <code>write</code>, <code>seekg</code>, <code>tellg</code>, <code>seekp</code>, <code>tellp</code></li>
+<li><a href="http://bytes.com/topic/c/answers/139776-size-file">获取文件长度</a></li>
+<li><code>sizeof</code></li>
+<li><a href="http://stackoverflow.com/a/2478575/238472">读写二进制数据</a></li>
+<li>迭代器<ul>
+<li>索引操作符: 12.3</li>
+<li>递增/递减操作符: A.3.1</li>
+<li>随机访问迭代器支持的操作: B.2.5</li>
+</ul>
+</li>
+<li>代理类<ul>
+<li>赋值操作符: 11.3.2</li>
+<li>类型转换操作符: 12.5</li>
+</ul>
+</li>
+</ul>
+<h3>如何检验结果的正确性</h3>
+<p>在进阶要求和高阶要求中, 需要进行二进制读写, 其输入和输出都是二进制数据, 无法直接用文本文件构造输入, 也不能用肉眼看出文件中结果的正确性.</p>
+<p>解决办法是从控制台输入数字(整数, 实数等), 然后在程序里转换成二进制的字符数组再用流的<code>write</code>方法写入到文件里作为输入; 经过<code>sort</code>之后在从文件中用流的<code>read</code>方法读出字符数组, 转换成数字之后输出到控制台, 以检验结果的正确性.</p>
+<h2>第四次作业</h2>
+<p><a href="http://acm.zju.edu.cn/onlinejudge/showProblem.do?problemId=1727">ZOJ 2727 List the Books</a></p>
+<h3>要求</h3>
+<ol>
+<li>用<code>stable_partition</code>或者<code>partition</code>自己实现快速排序.</li>
+<li>快排写成模板则更好.</li>
+</ol>
+<h3>Tips</h3>
+<ul>
+<li>ZOJ不能使用lambda</li>
+<li>每次输出之间要有一个空行</li>
+<li><code>stable_partition</code></li>
+<li><code>partition</code></li>
+<li><code>min_element</code></li>
+<li><code>swap</code></li>
+<li>二元谓词</li>
+<li>函数对象(仿函数)</li>
+<li>函数指针</li>
+</ul>
+<h2>第五次作业</h2>
+<p>Accelerated C++ 习题8-2.</p>
+<h3>要求</h3>
+<p><strong>以下百分号表示所能得的分数, 只要交一题</strong></p>
+<p>基本要求(90%)</p>
+<ul>
+<li>完成习题并给出单元测试.</li>
+</ul>
+<p>进阶要求(100%)</p>
+<ul>
+<li>完成习题并使用作业三的容器做单元测试.</li>
+</ul>
+<h3>Tips</h3>
+<ol>
+<li><a href="https://gist.github.com/3054103">最简单的单元测试写法</a></li>
+<li><code>remove</code>函数(及其后缀版本)只需测试有效区间</li>
+</ol>
+<h2>作业样例</h2>
+<ul>
+<li><a href="https://gist.github.com/ac3642565a27d229fc0d">作业三高阶要求样例</a></li>
+<li><a href="https://gist.github.com/3065517">作业三基本要求样例</a></li>
+<li><a href="https://gist.github.com/0983c81a38ff921d6c0f">第四次作业样例</a></li>
+<li><a href="https://gist.github.com/3054103">简单的单元测试写法</a></li>
+</ul>
+<h1>联系方式</h1>
+<ul>
+<li>C++: answeror (no spam please) at gmail dot com</li>
+<li>Qt: 21021021 (no spam please) at zju dot edu dot cn</li>
+</ul>
+</section>
+                </article>
+            </div>
+        </div>
+    </div>
+    <script src='static/bootstrap/js/bootstrap.min.js'></script>
+</body>
+</html>

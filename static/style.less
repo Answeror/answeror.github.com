@@ -1,0 +1,139 @@
+@import (css,inline) "code.css";
+@import "tomorrow.less";
+
+.blog {
+    code {
+        padding: 1px 3px;
+        background-color: @base01;
+    }
+    .nav {
+        margin-top: 30px;
+        &:after {
+            display: block;
+            width: 100%;
+            height: 10px;
+            border-bottom: 1px @base0D dashed;
+            opacity: 0.2;
+        }
+    }
+    article.art {
+        margin-top: 5em;
+
+        section.head {
+            h1, h2 {
+                text-align: center;
+            }
+            .title {
+                font-size: 42px;
+            }
+            .ctime {
+                font-size: 21px;
+                line-height: 2em;
+                &::before {
+                    content: "\2014\ ";
+                }
+                &::after {
+                    content: " \2014";
+                }
+            }
+        }
+
+        section.body {
+            img {
+                display: block;
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                /* http://themes.elmastudio.de/kerikeri-dark/2012/02/12/image-post-with-image-border/ */
+                border-radius: 4px;
+                padding: 5px;
+                background: #2A2F31;
+                border: 1px solid #13171A;
+            }
+
+            blockquote {
+                font-style: italic;
+                border: none;
+            }
+
+            strong {
+                color: @base08;
+            }
+
+            table {
+                margin-left: auto;
+                margin-right: auto;
+                min-width: 70%;
+                border-collapse: collapse;
+                text-align: left;
+                th {
+                    border-bottom: 2px solid @base02;
+                    padding: 10px 8px;
+                    font-weight: bold;
+                    color: @base07;
+                }
+                tbody {
+                    td {
+                        border-bottom: 1px solid @base02;
+                        padding: 6px 8px;
+                    }
+                    tr:hover {
+                        color: @base09;
+                               * {
+                                   color: inherit;
+                               }
+                           }
+                       }
+                       &.top {
+                           td {
+                               vertical-align: top;
+                           }
+                       }
+                   }
+
+            h1,h2,h3,h4 {
+                &:before {
+                    color: @base09;
+                    @media (min-width: 768px) {
+                        position: absolute;
+                        right: 100%;
+                    }
+                    margin-right: 20px;
+                }
+            }
+
+            counter-reset: section;
+            h1 {
+                counter-reset: sub-section;
+                position: relative;
+                &:before {
+                    counter-increment: section;
+                    content: counter(section) ".";
+                }
+            }
+            h2 {
+                counter-reset: composite;
+                position: relative;
+                &:before {
+                    counter-increment: sub-section;
+                    content: counter(section) "." counter(sub-section) ".";
+                }
+            }
+            h3 {
+                counter-reset: detail;
+                position: relative;
+                &:before {
+                    counter-increment: composite;
+                    content: counter(section) "." counter(sub-section) "." counter(composite) ".";
+                }
+            }
+            h4 {
+                position: relative;
+                &:before{
+                    counter-increment: detail;
+                    content: counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) ".";
+                }
+            }
+        }
+    }
+}
