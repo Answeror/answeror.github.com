@@ -79,6 +79,8 @@
   display: block;
   width: 100%;
   height: 10px;
+}
+.blog hr {
   border-bottom: 1px #81a2be dashed;
   opacity: 0.2;
 }
