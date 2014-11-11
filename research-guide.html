@@ -207,12 +207,14 @@
 </table>
 
 <h3>开发环境搭建</h3>
-<p>我一般安装32位的Python <code>2.7.x</code>和<code>3.3.x</code>, <code>x</code>表示子版本号, (截至2013-09-09)最新版本是<code>2.7.5</code>和<code>3.3.2</code>, 在<a href="http://www.python.org/">官方网站</a>有下载. <strong>强烈建议</strong>使用<a href="https://code.google.com/p/windows-package-manager/">npackd</a>安装Python.</p>
-<p>如果不需要大规模科学计算, 建议安装32位Python. 64位的需要了再装也不迟. 各版本和各地址空间(32/64)的Python可以共存.</p>
-<p>Python的开发环境(IDE)建议使用<a href="http://ipython.org/">IPython notebook</a>. 如果使用过Python一段时间, 建议使用virtualenv和pip安装ipython. 如果是新手, 建议参考<a href="http://nbviewer.ipython.org/urls/raw.github.com/Answeror/python-course.2013/master/ex.0.ipynb">这里</a>安装.</p>
-<p>上述教程中用到的所有安装包均可在<a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">这里</a>下载. GOW可以在<a href="https://github.com/bmatzelle/gow/downloads">这里</a>下载.</p>
-<p>如果使用Python3, ipython的命令行对应为ipython3, 而不是ipython. 如果嫌每次输入ipython/python的绝对路径麻烦, 可以参考<a href="http://nbviewer.ipython.org/urls/raw.github.com/Answeror/python-course.2013/master/devenv.ipynb">这里</a>设置系统PATH环境变量.</p>
-<p>上述链接里还包含了pip和virtualenv的安装和使用方法, 强烈建议用之.</p>
+<p><del>我一般安装32位的Python <code>2.7.x</code>和<code>3.3.x</code>, <code>x</code>表示子版本号, (截至2013-09-09)最新版本是<code>2.7.5</code>和<code>3.3.2</code>, 在<a href="http://www.python.org/">官方网站</a>有下载. <strong>强烈建议</strong>使用<a href="https://code.google.com/p/windows-package-manager/">npackd</a>安装Python.</del></p>
+<p><del>如果不需要大规模科学计算, 建议安装32位Python. 64位的需要了再装也不迟. 各版本和各地址空间(32/64)的Python可以共存.</del></p>
+<p><del>Python的开发环境(IDE)建议使用<a href="http://ipython.org/">IPython notebook</a>. 如果使用过Python一段时间, 建议使用virtualenv和pip安装ipython. 如果是新手, 建议参考<a href="http://nbviewer.ipython.org/urls/raw.github.com/Answeror/python-course.2013/master/ex.0.ipynb">这里</a>安装.</del></p>
+<p><del>上述教程中用到的所有安装包均可在<a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/">这里</a>下载. GOW可以在<a href="https://github.com/bmatzelle/gow/downloads">这里</a>下载.</del></p>
+<p><del>如果使用Python3, ipython的命令行对应为ipython3, 而不是ipython. 如果嫌每次输入ipython/python的绝对路径麻烦, 可以参考<a href="http://nbviewer.ipython.org/urls/raw.github.com/Answeror/python-course.2013/master/devenv.ipynb">这里</a>设置系统PATH环境变量.</del></p>
+<p><del>上述链接里还包含了pip和virtualenv的安装和使用方法, 强烈建议用之.</del></p>
+<p>请无视上面的废话. 直接安装<a href="http://continuum.io/downloads">Anaconda Python</a>即可. 你可以先安装Python2的Anaconda, 然后参考<a href="http://continuum.io/blog/anaconda-python-3">这里</a>安装Python3环境. Anaconda的各个Python环境是相互隔离的, 相当于virtualenv. 其包管理机制类似于pip, 不同点是Anaconda从二进制安装.</p>
+<p>IDE建议使用<a href="https://www.jetbrains.com/pycharm/">PyCharm</a>. 如果你熟悉Vim, 请无视这段话.</p>
 <h2>OpenCV</h2>
 <h3>推荐书籍</h3>
 <table class='top wide'>
