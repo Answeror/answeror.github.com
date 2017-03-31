@@ -20,6 +20,32 @@
             
 <section class=body>
 <style>
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: 768px) {
+  .text-sm-left { text-align: left; }
+  .text-sm-right { text-align: right; }
+  .text-sm-center { text-align: center; }
+  .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: 992px) {
+  .text-md-left { text-align: left; }
+  .text-md-right { text-align: right; }
+  .text-md-center { text-align: center; }
+  .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: 1200px) {
+  .text-lg-left { text-align: left; }
+  .text-lg-right { text-align: right; }
+  .text-lg-center { text-align: center; }
+  .text-lg-justify { text-align: justify; }
+}
+
 #card {
   margin-top: 42px;
   margin-bottom: 42px;
@@ -44,6 +70,10 @@
 .pub {
   margin-top: 20px;
 }
+.puba a {
+  display: inline-block;
+  margin-right: 3px;
+}
 </style>
 
 <h1 id=title>Cosmo Du <small><small>// Legal name: Yu Du, 杜宇</small></small></h1>
@@ -53,9 +83,10 @@
       <img class='me img-responsive img-rounded' src='static/me.jpg'>
   </div>
   <pre id=desc class='col-md-8 col-xs-12'>
-Ph.D. candidate of State Key Lab of CAD&CG
-College of Computer Science, Zhejiang University
-Expected to graduate on <strong>March, 2017</strong>
+  2017-    : Google
+  2011-2017: Ph.D. student of State Key Lab of CAD&CG
+             College of Computer Science
+             Zhejiang University
 
     Contact: answeror [att] gmail [dot] com 
   Interests: Weakly supervised learning using
@@ -65,56 +96,83 @@ Ph.D. topic: Perceptual user interface & deep learning,
              (1) vision-based human pose estimation and
              (2) EMG-based gesture recognition.
 
-             [<a href='static/cv-yu-du-en.pdf' target=_blank>Résumé</a>][<a href='https://github.com/answeror/' target=_blank>Github</a>][<a href='https://scholar.google.com/citations?view_op=list_works&hl=en&user=em576AIAAAAJ&gmla=AJsN-F7uIyjxpdUeIEcRKY0_4nXfdzr0vJzcmWMDYkAZ6VE9WAHN7DJHPNl_Gs6njT8CFp_QfLKcUsF0M_2KTGwbRYJDx_fu67r4Gx0f7xPnepO7SaNGfQE' target=_blank>Google Scholar</a>]
-  </pre>
+             [<a href='static/cv-yu-du-en.pdf' target=_blank>Résumé</a>][<a href='https://github.com/Answeror/' target=_blank>Github</a>][<a href='https://scholar.google.com/citations?view_op=list_works&hl=en&user=em576AIAAAAJ&gmla=AJsN-F7uIyjxpdUeIEcRKY0_4nXfdzr0vJzcmWMDYkAZ6VE9WAHN7DJHPNl_Gs6njT8CFp_QfLKcUsF0M_2KTGwbRYJDx_fu67r4Gx0f7xPnepO7SaNGfQE' target=_blank>Google Scholar</a>]</pre>
 </div>
 
 <hr>
 <h3>Publications</h3>
 <div class=row>
   <div class='pub col-md-12'>
-    [<a href='http://www.mdpi.com/1424-8220/17/3/458/pdf' target=_blank>PDF</a>][<a href='https://github.com/Answeror/adamyo' target=_blank>CODE</a>][<a href='http://zju-capg.org/myo/data' target=_blank>DATA</a>] <strong>Surface EMG-based Inter-session Gesture Recognition Enhanced by Deep Domain Adaptation</strong>
-    <div>
-      <strong>Yu Du</strong>, Wenguang Jin, Wentao Wei, Yu Hu and Weidong Geng
-    </div>
-    <div>
-      <strong>Sensors</strong>, 2017
-    </div>
-    <div class='pubd'>
-      <small>
-        We present a benchmark database of HD-sEMG recordings of hand gestures performed by 23 participants, based on an 8×16 electrode array,
-        and propose a deep-learning-based domain adaptation framework to enhance sEMG-based inter-session gesture recognition.
-      </small>
-    </div>
-  </div>
-
-  <div class='pub col-md-12'>
-    [<a href='http://www.nature.com/articles/srep36571.pdf' target=_blank>PDF</a>][<a href='https://github.com/Answeror/srep' target=_blank>CODE</a>] <strong>Gesture Recognition by Instantaneous Surface EMG Images</strong>
-    <div>
-      Weidong Geng, <strong>Yu Du</strong>, Wenguang Jin, Wentao Wei, Yu Hu and Jiajun Li
-    </div>
-    <div>
-      <strong>Scientific Reports</strong>, 2016
-    </div>
-    <div class='pubd'>
-      <small>
-        We present that the patterns inside the instantaneous values of high-density sEMG enables gesture recognition to be performed merely with sEMG signals at a specific instant.
-      </small>
+    <div class=row>
+      <div class='puba col-md-2 text-md-right'>
+        <a href='http://zju-capg.org/myo/ada' target=_blank><span class='glyphicon glyphicon-globe' aria-hidden=true></span></a>
+        <a href='http://www.mdpi.com/1424-8220/17/3/458/pdf' target=_blank><span class='glyphicon glyphicon-file' aria-hidden=true></span></a>
+        <a href='http://zju-capg.org/myo/data' target=_blank><span class='glyphicon glyphicon-hdd' aria-hidden=true></span></a>
+        <a href='https://github.com/Answeror/adamyo' target=_blank><span class='glyphicon glyphicon-console' aria-hidden=true></span></a>
+      </div>
+      <div class='col-md-10'>
+        <strong>Surface EMG-based Inter-session Gesture Recognition Enhanced by Deep Domain Adaptation</strong>
+        <div>
+          <strong>Yu Du</strong>, Wenguang Jin, Wentao Wei, Yu Hu and Weidong Geng
+        </div>
+        <div>
+          <strong>Sensors</strong>, 2017
+        </div>
+        <div class='pubd'>
+          <small>
+            We present a benchmark database of HD-sEMG recordings of hand gestures performed by 23 participants, based on an 8×16 electrode array,
+            and propose a deep-learning-based domain adaptation framework to enhance sEMG-based inter-session gesture recognition.
+          </small>
+        </div>
+      </div>
     </div>
   </div>
 
   <div class='pub col-md-12'>
-    [<a href='http://zju-capg.org/heightmap/code-and-model.zip' target=_blank>CODE</a>] <strong>Marker-less 3D Human Motion Capture with Monocular Image Sequence and Height-Maps</strong>
-    <div>
-      <strong>Yu Du</strong>, Yongkang Wong, Yonghao Liu, Feilin Han, Yilin Gui, Zhen Wang, Mohan Kankanhalli and Weidong Geng
+    <div class=row>
+      <div class='puba col-md-2 text-md-right'>
+        <a href='http://zju-capg.org/myo' target=_blank><span class='glyphicon glyphicon-globe' aria-hidden=true></span></a>
+        <a href='http://www.nature.com/articles/srep36571.pdf' target=_blank><span class='glyphicon glyphicon-file' aria-hidden=true></span></a>
+        <a href='http://zju-capg.org/myo/data' target=_blank><span class='glyphicon glyphicon-hdd' aria-hidden=true></span></a>
+        <a href='https://github.com/Answeror/srep' target=_blank><span class='glyphicon glyphicon-console' aria-hidden=true></span></a>
+      </div>
+      <div class='col-md-10'>
+        <strong>Gesture Recognition by Instantaneous Surface EMG Images</strong>
+        <div>
+          Weidong Geng, <strong>Yu Du</strong>, Wenguang Jin, Wentao Wei, Yu Hu and Jiajun Li
+        </div>
+        <div>
+          <strong>Scientific Reports (Nature Publishing Group)</strong>, 2016
+        </div>
+        <div class='pubd'>
+          <small>
+            We present that the patterns inside the instantaneous values of high-density sEMG enables gesture recognition to be performed merely with sEMG signals at a specific instant.
+          </small>
+        </div>
+      </div>
     </div>
-    <div>
-      European Conference on Computer Vision (<strong>ECCV</strong>), 2016
-    </div>
-    <div class='pubd'>
-      <small>
-        We propose height-map as a type of built-in prior knowledge to detect the anatomical landmarks of a human body with a single-view calibrated camera, as well as enforce the temporal constraints on the camera and 3D poses for improved skeleton-based human pose estimation.
-      </small>
+  </div>
+
+  <div class='pub col-md-12'>
+    <div class=row>
+      <div class='puba col-md-2 text-md-right'>
+        <a href='http://zju-capg.org/heightmap' target=_blank><span class='glyphicon glyphicon-globe' aria-hidden=true></span></a>
+        <a href='http://zju-capg.org/heightmap/code-and-model.zip' target=_blank><span class='glyphicon glyphicon-console' aria-hidden=true></span></a>
+      </div>
+      <div class=col-md-10>
+        <strong>Marker-less 3D Human Motion Capture with Monocular Image Sequence and Height-Maps</strong>
+        <div>
+          <strong>Yu Du</strong>, Yongkang Wong, Yonghao Liu, Feilin Han, Yilin Gui, Zhen Wang, Mohan Kankanhalli and Weidong Geng
+        </div>
+        <div>
+          European Conference on Computer Vision (<strong>ECCV</strong>), 2016
+        </div>
+        <div class='pubd'>
+          <small>
+            We propose height-map as a type of built-in prior knowledge to detect the anatomical landmarks of a human body with a single-view calibrated camera, as well as enforce the temporal constraints on the camera and 3D poses for improved skeleton-based human pose estimation.
+          </small>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -123,6 +181,7 @@ Ph.D. topic: Perceptual user interface & deep learning,
         </div>
       </div>
     </div>
+    <script src='static/js/jquery.min.js'></script>
     <script src='static/bootstrap/js/bootstrap.min.js'></script>
     <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
